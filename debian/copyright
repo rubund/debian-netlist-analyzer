@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: netan
-Source: https://github.com/rubund/netan
+Upstream-Name: netlist-analyzer
+Source: https://github.com/rubund/netlist-analyzer
 
 Files: *
 Copyright: 2017-2018 Ruben Undheim <ruben.undheim@gmail.com>

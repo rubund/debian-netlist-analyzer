@@ -1,2 +1,2 @@
 version=3
-https://github.com/rubund/netan/releases /rubund/netan/archive/(\d\S+)\.tar\.(?:bz2|gz|xz)
+https://github.com/rubund/netlist-analyzer/releases /rubund/netlist-analyzer/archive/(\d\S+)\.tar\.(?:bz2|gz|xz)
