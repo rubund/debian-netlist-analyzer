@@ -1,0 +1,26 @@
+From: Ruben Undheim <ruben.undheim@gmail.com>
+Date: Sun, 22 Jul 2018 13:11:44 +0200
+Subject: Fix DESTDIR
+
+---
+ Makefile | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index 0bde869..f1356c6 100644
+--- a/Makefile
++++ b/Makefile
+@@ -24,9 +24,9 @@ clean:
+ 	rm -f dependencies
+ 
+ install: netan
+-	install netan $(PREFIX)/bin/netan
+-	ln -sf netan $(PREFIX)/bin/netlist-analyzer
++	install netan $(DESTDIR)$(PREFIX)/bin/netan
++	ln -sf netan $(DESTDIR)$(PREFIX)/bin/netlist-analyzer
+ 
+ uninstall:
+-	rm -f $(PREFIX)/bin/netan
+-	rm -f $(PREFIX)/bin/netlist-analyzer
++	rm -f $(DESTDIR)$(PREFIX)/bin/netan
++	rm -f $(DESTDIR)$(DESTDIR)$(PREFIX)/bin/netlist-analyzer
