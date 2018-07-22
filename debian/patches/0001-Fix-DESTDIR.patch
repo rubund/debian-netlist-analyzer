@@ -3,19 +3,20 @@ Date: Sun, 22 Jul 2018 13:11:44 +0200
 Subject: Fix DESTDIR
 
 ---
- Makefile | 8 ++++----
- 1 file changed, 4 insertions(+), 4 deletions(-)
+ Makefile | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
 
 diff --git a/Makefile b/Makefile
-index 0bde869..f1356c6 100644
+index 0bde869..d39a451 100644
 --- a/Makefile
 +++ b/Makefile
-@@ -24,9 +24,9 @@ clean:
+@@ -24,9 +24,10 @@ clean:
  	rm -f dependencies
  
  install: netan
 -	install netan $(PREFIX)/bin/netan
 -	ln -sf netan $(PREFIX)/bin/netlist-analyzer
++	mkdir -p $(DESTDIR)$(PREFIX)/bin
 +	install netan $(DESTDIR)$(PREFIX)/bin/netan
 +	ln -sf netan $(DESTDIR)$(PREFIX)/bin/netlist-analyzer
  
